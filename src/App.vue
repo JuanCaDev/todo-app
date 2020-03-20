@@ -1,12 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Logo />
+    <Navigation />
+    <router-view />
   </div>
 </template>
+
+<script>
+import Logo from '@/components/Logo';
+import Navigation from '@/components/Navigation';
+
+export default {
+  components: {
+    Logo,
+    Navigation
+  }
+}
+</script>
 
 <style>
 #app {
